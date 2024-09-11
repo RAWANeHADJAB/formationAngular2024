@@ -1,0 +1,24 @@
+<p>generic-table works!</p>
+<table>
+  <thead>
+    <tr>
+      <th *ngFor="let col of columns; trackBy: trackByFn" (click)="sortData(col.field)">
+        {{ col.header }}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of paginatedData; trackBy: trackByFn">
+      <td *ngFor="let col of columns; trackBy: trackByFn">
+        {{ item[col.field] }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+  <div class="pagination">
+    <button type="button" class="Previous" (click)="goToPage(currentPage - 1)" [disabled]="currentPage === 1">Previous</button>
+    <span>Page {{ currentPage }}</span>
+    <button type="button" class="Next" (click)="goToPage(currentPage + 1)" [disabled]="paginatedData.length < tableSize">Next</button>
+  </div>
+  

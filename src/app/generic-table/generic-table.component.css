@@ -1,0 +1,39 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    cursor: pointer;
+    background-color: #f2f2f2;
+  }
+  .pagination{
+    display: flex;
+    justify-content: center;
+
+  }
+  span{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .Next{
+    background-color: #9ae49e;
+    border: none;
+    width: 100px;
+    height: 30px;
+    margin-right: 20px;
+  }
+  .Previous{
+    background-color: rgb(222, 211, 211);
+    border: none;
+    width: 100px;
+    height: 30px;
+  }
+  
