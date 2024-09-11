@@ -1,1 +1,9 @@
 <app-generic-table [columns]="tableColumns" [data]="tableData" [tableSize]="5"></app-generic-table>
+<app-confirm-popup
+  [title]="'popup!'"
+  [message]="'Voulez-vous vraiment supprimer cet élément ?'"
+  [confirmText]="'Supprimer'"
+  [cancelText]="'Annuler'"
+  (confirm)="handleConfirm()"
+  (cancel)="handleCancel()">
+</app-confirm-popup>

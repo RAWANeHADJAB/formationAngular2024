@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GenericTableComponent } from "./generic-table/generic-table.component";
+import { ConfirmPopupComponent } from "./confirm-popup/confirm-popup.component";
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { GenericTableComponent } from "./generic-table/generic-table.component";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    GenericTableComponent
+    GenericTableComponent,
+    ConfirmPopupComponent
 ],
   providers: [],
   bootstrap: [AppComponent]

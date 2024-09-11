@@ -28,5 +28,12 @@ export class AppComponent {
     { id: 11, name: 'imane', age: 25 },
     { id: 12, name: 'ali', age: 14 },
   ];
+  handleConfirm() {
+    console.log('Action confirmée');
+  }
+  
+  handleCancel() {
+    console.log('Action annulée');
+  }
   
 }
