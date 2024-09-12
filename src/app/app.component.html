@@ -1,4 +1,9 @@
-<app-generic-table [columns]="tableColumns" [data]="tableData" [tableSize]="5"></app-generic-table>
+<app-generic-table 
+   [columns]="tableColumns"
+   [data]="tableData" 
+   [tableSize]="5"
+ ></app-generic-table>
+
 <app-confirm-popup
   [title]="'popup!'"
   [message]="'Voulez-vous vraiment supprimer cet élément ?'"
@@ -7,3 +12,9 @@
   (confirm)="handleConfirm()"
   (cancel)="handleCancel()">
 </app-confirm-popup>
+
+<app-generic-form 
+  [fields]="formFields" 
+  (formSubmit)="handleFormSubmit($event)" 
+  (formCancel)="handleFormCancel()">
+</app-generic-form>

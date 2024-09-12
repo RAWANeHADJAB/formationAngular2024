@@ -28,6 +28,7 @@ export class AppComponent {
     { id: 11, name: 'imane', age: 25 },
     { id: 12, name: 'ali', age: 14 },
   ];
+  //------------------------------------------------------------------------------------------------------
   handleConfirm() {
     console.log('Action confirmée');
   }
@@ -35,5 +36,20 @@ export class AppComponent {
   handleCancel() {
     console.log('Action annulée');
   }
-  
+  //----------------------------------------------------------------------------
+
+  formFields = [
+    { name: 'firstName', label: 'First Name', type: 'text', required: true },
+    { name: 'lastName', label: 'Last Name', type: 'text', required: true },
+    { name: 'email', label: 'Email', type: 'email', required: true },
+  ];
+
+  handleFormSubmit(formData: any) {
+    console.log('Form Submitted', formData);
+  }
+
+  handleFormCancel() {
+    console.log('Form Canceled');
+  }
 }
+

@@ -1,0 +1,16 @@
+<div class="form">
+    <form [formGroup]="form" (ngSubmit)="submitForm()">
+        <div class="item" *ngFor="let field of fields">
+          <label>{{ field.label }}</label>
+          <input title="t" [type]="field.type" [formControlName]="field.name" />
+          <div *ngIf="form.get(field.name)?.invalid && form.get(field.name)?.touched">
+            <small *ngIf="form.get(field.name)?.errors?.['required']">This field is required.</small>
+          </div>
+        </div>
+      
+        <button type="submit" [disabled]="form.invalid">Submit</button>
+        <button type="button" (click)="cancelForm()">Cancel</button>
+      </form>
+</div>
+
+  

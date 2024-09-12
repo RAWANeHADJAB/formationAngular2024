@@ -36,4 +36,8 @@ table {
     width: 100px;
     height: 30px;
   }
+  button{
+    cursor: pointer;
+    border-radius: 5px;
+  }
   
