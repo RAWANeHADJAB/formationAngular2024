@@ -51,5 +51,23 @@ export class AppComponent {
   handleFormCancel() {
     console.log('Form Canceled');
   }
+
+  //-------------------------------------------------------------------
+  optionsList = [
+    { label: 'Option 1', value: 10 },
+    { label: 'Option 2', value: 20 },
+    { label: 'Option 3', value: 30 }
+  ];
+
+  selectedItems: any[] = [];
+
+  onSelectionChange(selectedValues: any[]) {
+    this.selectedItems = selectedValues;
+    console.table(this.selectedItems);
+  }
+  onItemsSelected(selectedItems: string[]): void {
+    this.selectedItems = selectedItems;  
+    console.table(this.selectedItems);
+  }
 }
 

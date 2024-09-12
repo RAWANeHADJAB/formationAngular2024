@@ -5,7 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GenericTableComponent } from "./generic-table/generic-table.component";
 import { ConfirmPopupComponent } from "./confirm-popup/confirm-popup.component";
-import {GenericFormComponent} from"./generic-form/generic-form.component"
+import {GenericFormComponent} from"./generic-form/generic-form.component";
+import {MultiSelectComponent} from"./multi-select/multi-select.component";
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import {GenericFormComponent} from"./generic-form/generic-form.component"
     ReactiveFormsModule,
     GenericTableComponent,
     ConfirmPopupComponent,
-    GenericFormComponent
+    GenericFormComponent,
+    MultiSelectComponent
 ],
   providers: [],
   bootstrap: [AppComponent]

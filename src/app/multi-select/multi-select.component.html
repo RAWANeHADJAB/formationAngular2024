@@ -1,0 +1,22 @@
+<div class="contenu">
+    <div>
+        <input title="t" type="checkbox" 
+               [checked]="isAllSelected()" 
+               (change)="toggleSelectAll($event)">
+        Tout sélectionner
+      </div>
+      <hr>
+    <div *ngFor="let option of options">
+        <input title="t" type="checkbox" 
+         [checked]="isSelected(option.value)" 
+         (change)="toggleSelection(option.value)">
+        <span [ngStyle]="isSelected(option.value) ? selectedStyle : {}">
+               {{ option.value }}
+        </span>
+            
+      </div>
+</div>
+
+
+  
+  
